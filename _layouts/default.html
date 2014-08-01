@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>{{ page.title}}</title>
+<link rel="stylesheet"href="Data/media/css/styles.css" type="text/css">
+<!-- favicon - needs to have the http://full_path link -->
+<link rel="icon" type="image/png" href="">
+
+<!-- keywords for search engines -->
+<meta name="keywords" content="earth systems grid, go-essp, esg, esgf, distributed computing, distributed storage, climate science">
+<meta name="description" content="A distributed database for structured data.">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+
+<body>
+<div>
+
+  <div id="header" style="overflow: hidden">
+    <div id="logo" style="float: left; margin-right: 20px; margin-left: -10px"> 
+      <a href="#"><img src="Data/media/images/square.gif" width="70" height="70" border="0"></a>
+    </div>
+    <div>
+      <div class="title">Title</div>
+      <div class="subtitle">SubTitle</div>
+      <div class="projects">
+        <a href="#">Projects</a> &middot;
+      </div> <!-- projects -->
+    </div>
+  </div> <!-- header -->
+
+  <div class="lsidebar">
+    <ul>
+      <li><a href="#">Navigation</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">First steps</a></li>
+      <li><a href="#">About</a></li>
+
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include pages_list %}
+    </ul>
+  </div> <!-- lsidebar -->
+
+  <div class="content">
+
+    {{content}}
+
+  </div> <!-- content -->
+
+  <br class="clearfloat" />
+  <div id="footer">
+    <div>
+      <div class="projects">
+        <p>
+        <a href="http://www-pcmdi.llnl.gov/">PCMDI</a> &middot;
+        <a href="http://cmip-pcmdi.llnl.gov/cmip5/">CMIP5</a> &middot;
+        <a href="https://www.llnl.gov/">LLNL</a> &middot;
+        <a href="#">Privacy &amp; Legal Notice</a> &middot;
+        <a href="#">LLNL-WEB-460643</a>
+        </p>
+      </div> <!-- projects -->
+    </div>
+  </div> <!-- footer -->
+
+</div> <!-- body -->
+</body>
+</html>
